@@ -1,6 +1,6 @@
 # TerraCraft
 
-**Сайт игры: <https://matvey-zcorp.github.io/TerraCraft>/**
+**Сайт игры: <https://matvey-zcorp.github.io/TerraCraft>**
 
 ## Описание
 **TerraCraft** - Смесь игр Terraria и Minecraft.\
