@@ -1,0 +1,4 @@
+.venv
+releases.zip
+src/__pycache__
+web/
