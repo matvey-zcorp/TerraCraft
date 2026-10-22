@@ -1,0 +1,98 @@
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25%      { transform: rotate(-5deg); }
+    75%      { transform: rotate(5deg); }
+}
+
+body {
+    background: linear-gradient(to bottom, #1c1d1f, #058ea1);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+#top-panel {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #00fc93;
+    height: 80px !important;
+    min-height: 80px;
+    max-height: 80px;
+    border: 3px solid #70486c;
+    border-radius: 15%;
+
+}
+
+#icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 20%;
+    border: 2px solid #272f3b;
+}
+
+#links-tab {
+    border: 2px solid #ff00e6;
+    margin: 50px;
+    border-radius: 20%;
+    position: relative;
+    bottom: 115px;
+    left: 40px;
+    height: 50px;
+}
+
+.link {
+    margin: 100px;
+    display: inline-block;
+    font-family: Segoe UI;
+    text-decoration: none;
+    color: #2c3440;
+    position: relative;
+    bottom: 85px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    animation: wiggle 0.5s infinite;
+}
+
+.download-link {
+    display: inline-block;
+    font-family: Segoe UI;
+    text-decoration: none;
+    color: #2c3440;
+    margin: 15px;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+    animation: wiggle 0.5s infinite;
+}
+
+#name {
+    text-align: center;
+    color: #78e91b;
+    font-family: Segoe UI;
+}
+
+.text {
+    text-align: center;
+    font-family: Segoe UI;
+    border: 6px solid #8E8987;
+    border-radius: 15%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.download {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #8E8987;
+    border-radius: 15%;
+    text-align: center;
+}
+
+.download-text {
+    margin: 15px;
+    font-family: Segoe UI;
+}
