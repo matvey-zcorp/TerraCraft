@@ -1,16 +1,16 @@
 # Variables
-venvActivate = .\venv\Activate.ps1
+venvActivate = .venv\Scripts\Activate.ps1
 srcDir = .\src
 gameFile = game.py
 distDir = .\dist
 tempDir = .\temp
 icon = icon.ico
-venv = .\venv
+venv = .venv
 requirementsFile = requirements.txt
 
 # Settings
 SHELL := powershell.exe
-.SHELLFLAGS := -NoProfilw -Command
+.SHELLFLAGS := -NoProfile -Command
 .DEFAULT_GOAL := run
 .PHONY: run build create install clean
 .SILENT:
@@ -20,8 +20,7 @@ run:
 	Write-Output "Activating venv..."
 	$(venvActivate)
 	Write-Output "Running..."
-	Set-Location $(srcDir)
-	python .\$(gameFile)
+	Set-Location $(srcDir) | python .\$(gameFile)
 	Write-Output "Program exited!"
 
 build:
